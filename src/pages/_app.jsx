@@ -21,9 +21,9 @@ export default function App({ Component, pageProps, router }) {
 
   return (
     <>
-      <div className="fixed inset-0 flex justify-center sm:px-8">
-        <div className="flex w-full max-w-7xl lg:px-8">
-          <div className="w-full  bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900" />
+      <div className="fixed inset-0 flex justify-center sm:px-8" style={{background: 'radial-gradient(600px at 1179px 186px, rgba(29, 78, 216, 0.15), transparent 80%);'}}>
+        <div className="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute flex w-full max-w-7xl lg:px-8">
+          <div className="w-full"/>
         </div>
       </div>
       <div className="relative">
