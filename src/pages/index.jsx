@@ -204,7 +204,7 @@ function Resume() {
     )
 }
 
-export default function Home({articles}) {
+export default function Home() {
     return (
         <>
             <Head>
@@ -213,7 +213,7 @@ export default function Home({articles}) {
                 </title>
                 <meta
                     name="description"
-                    content="I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."
+                    content="I’m Tsiory, a software engineer  based in Valencia (Spain). I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."
                 />
             </Head>
             <Container className="mt-9">
@@ -222,18 +222,19 @@ export default function Home({articles}) {
                         Senior Software engineer.
                     </h1>
                     <p className="mt-4 text-base leading-normal text-zinc-600 dark:text-zinc-400">
-                        I’m Spencer, a software designer and entrepreneur based in New York
-                        regular people to explore space on their
-                        own terms.
+                        I’m Tsiory, a software engineer based in Valencia (Spain)
                     </p>
-                    <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-                        I’m Spencer, a software designer and entrepreneur based in New York
-                        City. I’m the founder and CEO of Planetaria, where we develop
-                        technologies that empower regular people to explore space on their
-                        own terms.
+                    <p className=" text-base leading-normal text-zinc-600 dark:text-zinc-400">
+                        I build pixel-perfect, engaging, and accessible digital experiences.
                     </p>
-
                 </div>
+                <Container className="mt-24 md:mt-28">
+                    <div className="mx-auto max-w-xl  gap-y-20 lg:max-w-none ">
+                        <div className="space-y-10 lg:pl-16 xl:pl-24">
+                            <Resume/>
+                        </div>
+                    </div>
+                </Container>
             </Container>
         </>
     )
