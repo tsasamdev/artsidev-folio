@@ -1,18 +1,14 @@
 import Image from 'next/image'
 import Head from 'next/head'
-import Link from 'next/link'
 
 import {Button} from '@/components/Button'
-import {Card} from '@/components/Card'
 import {Container} from '@/components/Container'
-import {GitHubIcon, InstagramIcon, LinkedInIcon, TwitterIcon,} from '@/components/SocialIcons'
 import logoAirbnb from '@/images/logos/airbnb.svg'
 import logoFacebook from '@/images/logos/facebook.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
 import logoStarbucks from '@/images/logos/starbucks.svg'
 import {generateRssFeed} from '@/lib/generateRssFeed'
 import {getAllArticles} from '@/lib/getAllArticles'
-import {formatDate} from '@/lib/formatDate'
 
 function MailIcon(props) {
     return (
@@ -73,20 +69,15 @@ function ArrowDownIcon(props) {
     )
 }
 
-function Article({article}) {
+function ArrowRightIcon(props) {
     return (
-        <Card as="article">
-            <Card.Title href={`/articles/${article.slug}`}>
-                {article.title}
-            </Card.Title>
-            <Card.Eyebrow as="time" dateTime={article.date} decorate>
-                {formatDate(article.date)}
-            </Card.Eyebrow>
-            <Card.Description>{article.description}</Card.Description>
-            <Card.Cta>Read article</Card.Cta>
-        </Card>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+             {...props}>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
+        </svg>
     )
 }
+
 
 
 function Newsletter() {
@@ -97,21 +88,17 @@ function Newsletter() {
         >
             <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
                 <MailIcon className="h-6 w-6 flex-none"/>
-                <span className="ml-3">Stay up to date</span>
+                <span className="ml-3">Want to hire me?</span>
             </h2>
-            <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-                Get notified when I publish something new, and unsubscribe at any time.
-            </p>
+
             <div className="mt-6 flex">
-                <input
-                    type="email"
-                    placeholder="Email address"
-                    aria-label="Email address"
-                    required
-                    className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"
-                />
-                <Button type="submit" className="ml-4 flex-none">
-                    Join
+                <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+                    Want to ask me to realize a job for you?. Don&#39;t hesitate to reach me
+                </p>
+                <Button type="submit" variant="secondary" className="mt-9 ml-3">
+                   Hire
+                    <ArrowRightIcon
+                        className="h-4 w-4 stroke-teal-400 transition group-active:stroke-teal-600 dark:group-hover:stroke-teal-50 dark:group-active:stroke-teal-50"/>
                 </Button>
             </div>
         </form>
@@ -198,7 +185,7 @@ function Resume() {
             <Button href="#" variant="secondary" className="group mt-6 w-full">
                 Download CV
                 <ArrowDownIcon
-                    className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50"/>
+                    className="h-4 w-4 stroke-teal-400 transition group-active:stroke-teal-600 dark:group-hover:stroke-teal-50 dark:group-active:stroke-teal-50"/>
             </Button>
         </div>
     )
@@ -229,9 +216,12 @@ export default function Home() {
                     </p>
                 </div>
                 <Container className="mt-24 md:mt-28">
-                    <div className="mx-auto max-w-xl  gap-y-20 lg:max-w-none ">
-                        <div className="space-y-10 lg:pl-16 xl:pl-24">
+                    <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
+                        <div className="flex flex-col gap-16">
                             <Resume/>
+                        </div>
+                        <div className="space-y-10 lg:pl-16 xl:pl-24">
+                            <Newsletter/>
                         </div>
                     </div>
                 </Container>
