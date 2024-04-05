@@ -81,9 +81,6 @@ export default function About() {
               <SocialLink href="#" icon={LinkedInIcon} className="mt-4">
                 Follow on LinkedIn
               </SocialLink>
-              <SocialLink href="#" icon={TwitterIcon} className="mt-4">
-                Follow on Twitter
-              </SocialLink>
               <SocialLink
                 href="mailto:t.arisoa@mail.com"
                 icon={MailIcon}

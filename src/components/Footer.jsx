@@ -38,11 +38,6 @@ export function Footer() {
               </div>
               <div className=" flex gap-6">
                 <SocialLink
-                    href="https://twitter.com"
-                    aria-label="Follow on Twitter"
-                    icon={TwitterIcon}
-                />
-                <SocialLink
                     href="https://github.com"
                     aria-label="Follow on GitHub"
                     icon={GitHubIcon}
@@ -54,7 +49,7 @@ export function Footer() {
                 />
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
-                &copy; {new Date().getFullYear()} Spencer Sharp. All rights
+                &copy; {new Date().getFullYear()} Tsiory Arisoa. All rights
                 reserved.
               </p>
             </div>
