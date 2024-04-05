@@ -41,7 +41,7 @@ export default function Document() {
       <Head>
         <script dangerouslySetInnerHTML={{ __html: modeScript }} />
       </Head>
-      <body className="group/spotlight relative flex h-full flex-col bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900">
+      <body className="relative flex h-full flex-col bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900">
         <Main />
         <NextScript />
       </body>
