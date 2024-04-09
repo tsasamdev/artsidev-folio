@@ -5,7 +5,7 @@ import {Button} from '@/components/Button'
 import {Container} from '@/components/Container'
 import logoAirbnb from '@/images/logos/airbnb.svg'
 import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+import logoMomentum from '@/images/logos/momentum.svg'
 import logoStarbucks from '@/images/logos/starbucks.svg'
 import {generateRssFeed} from '@/lib/generateRssFeed'
 import {getAllArticles} from '@/lib/getAllArticles'
@@ -109,36 +109,29 @@ function Newsletter() {
 function Resume() {
     let resume = [
         {
-            company: 'Planetaria',
-            title: 'CEO',
-            logo: logoPlanetaria,
-            start: '2019',
+            company: 'Momentum Games',
+            title: 'Senior Backend engineer',
+            logo: logoMomentum,
+            start: '2023',
             end: {
                 label: 'Present',
                 dateTime: new Date().getFullYear(),
             },
         },
         {
-            company: 'Airbnb',
-            title: 'Product Designer',
+            company: 'Zeus Smart Visual Data',
+            title: 'Backend engineer',
             logo: logoAirbnb,
-            start: '2014',
-            end: '2019',
+            start: '2021',
+            end: '2023',
         },
         {
-            company: 'Facebook',
-            title: 'iOS Software Engineer',
+            company: 'Sopra Steria',
+            title: 'Backend engineer',
             logo: logoFacebook,
-            start: '2011',
-            end: '2014',
-        },
-        {
-            company: 'Starbucks',
-            title: 'Shift Supervisor',
-            logo: logoStarbucks,
-            start: '2008',
-            end: '2011',
-        },
+            start: '2018',
+            end: '2021',
+        }
     ]
 
     return (
