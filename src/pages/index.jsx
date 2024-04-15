@@ -6,7 +6,6 @@ import {Container} from '@/components/Container'
 import logoZeus from '@/images/logos/zeus.svg'
 import logoSopra from '@/images/logos/facebook.svg'
 import logoMomentum from '@/images/logos/momentum.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
 import {generateRssFeed} from '@/lib/generateRssFeed'
 import {getAllArticles} from '@/lib/getAllArticles'
 
@@ -176,7 +175,7 @@ function Resume() {
                     </li>
                 ))}
             </ol>
-            <Button href="#" variant="secondary" className="group mt-6 w-full">
+            <Button href="/resume.pdf" variant="secondary" className="group mt-6 w-full">
                 Download CV
                 <ArrowDownIcon
                     className="h-4 w-4 stroke-teal-400 transition group-active:stroke-teal-600 dark:group-hover:stroke-teal-50 dark:group-active:stroke-teal-50"/>
