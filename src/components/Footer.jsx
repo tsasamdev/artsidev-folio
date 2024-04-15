@@ -38,7 +38,7 @@ export function Footer() {
               </div>
               <div className=" flex gap-6">
                 <SocialLink
-                    href="https://github.com"
+                    href="https://github.com/tsasamdev"
                     aria-label="Follow on GitHub"
                     icon={GitHubIcon}
                 />
