@@ -3,8 +3,8 @@ import Head from 'next/head'
 
 import {Button} from '@/components/Button'
 import {Container} from '@/components/Container'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
+import logoZeus from '@/images/logos/zeus.svg'
+import logoSopra from '@/images/logos/facebook.svg'
 import logoMomentum from '@/images/logos/momentum.svg'
 import logoStarbucks from '@/images/logos/starbucks.svg'
 import {generateRssFeed} from '@/lib/generateRssFeed'
@@ -121,14 +121,14 @@ function Resume() {
         {
             company: 'Zeus Smart Visual Data',
             title: 'Backend engineer',
-            logo: logoAirbnb,
+            logo: logoZeus,
             start: '2021',
             end: '2023',
         },
         {
             company: 'Sopra Steria',
             title: 'Backend engineer',
-            logo: logoFacebook,
+            logo: logoSopra,
             start: '2018',
             end: '2021',
         }
