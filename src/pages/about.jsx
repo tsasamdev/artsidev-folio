@@ -5,12 +5,10 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import {
-  TwitterIcon,
-  InstagramIcon,
   GitHubIcon,
   LinkedInIcon,
 } from '@/components/SocialIcons'
-import portraitImage from '@/images/portrait.jpg'
+import portraitImage from '@/images/avatar2.jpg'
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
@@ -41,10 +39,10 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About - Spencer Sharp</title>
+        <title>About - Tsiory Arisoa</title>
         <meta
           name="description"
-          content="I’m Spencer Sharp. I live in New York City, where I design the future."
+          content="I’m Tsiory Arisoa. I live in Valencia (Spain), where I design the future."
         />
       </Head>
       <Container className="mt-16 sm:mt-32">
@@ -64,13 +62,19 @@ export default function About() {
               I&#39;m Tsiory Arisoa. I live in Valencia (Spain), where I build some cool stuff.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+               <p>
+                 My main focus these days is building scalable and optimized backend solutions for our customers at
+                 {" "}
+                 <a className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300" href="https://momentumgames.io/" target="_blank" rel="noreferrer noopener" aria-label="golang dev (opens in a new tab)">Momentum Games</a>.
+                  I most enjoy building software in the sweet spot where design and engineering meet — things that look good but are also built well under the hood. In my free time, I&#39;me working on personal side projects and learning
+                 {" "}
+                 <a className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300" href="https://go.dev/" target="_blank" rel="noreferrer noopener" aria-label="golang dev (opens in a new tab)">Golang</a>.
+               </p>
               <p>
-                Back in 2012, I decided to try my hand at creating custom Tumblr themes and tumbled head first into the rabbit hole of coding and web development. Fast-forward to today, and I’ve had the privilege of building software for an advertising agency, a start-up, a huge corporation, and a digital product studio.
-
-                My main focus these days is building accessible user interfaces for our customers at Klaviyo. I most enjoy building software in the sweet spot where design and engineering meet — things that look good but are also built well under the hood. In my free time, I&#39;ve also released an online video course that covers everything you need to know to build a web app with the Spotify API.
-
-                When I&#39;m not at the computer, I’m usually rock climbing, reading, hanging out with my wife and two cats, or running around Hyrule searching for Korok seedsKorok seeds.
+                When I&#39;m not at the computer, I’m usually running, reading, hanging out with friends, or playing some video games.
               </p>
+
+
             </div>
           </div>
           <div className="lg:pl-20">
