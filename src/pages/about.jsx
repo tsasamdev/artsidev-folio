@@ -66,12 +66,12 @@ export default function About() {
                  My main focus these days is building scalable and optimized backend solutions for our customers at
                  {" "}
                  <a className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300" href="https://momentumgames.io/" target="_blank" rel="noreferrer noopener" aria-label="golang dev (opens in a new tab)">Momentum Games</a>.
-                  I most enjoy building software in the sweet spot where design and engineering meet — things that look good but are also built well under the hood. In my free time, I&#39;me working on personal side projects and learning
+                  I most enjoy building software in the sweet spot where design and engineering meet — things that look good but are also built well under the hood. In my free time, I&#39;m working on personal side projects and playing with
                  {" "}
-                 <a className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300" href="https://go.dev/" target="_blank" rel="noreferrer noopener" aria-label="golang dev (opens in a new tab)">Golang</a>.
+                 <a className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300" href="https://adonisjs.com/" target="_blank" rel="noreferrer noopener" aria-label="adonisjs dev (opens in a new tab)">AdonisJS</a>.
                </p>
               <p>
-                When I&#39;m not at the computer, I’m usually running, reading, hanging out with friends, or playing some video games.
+                When I&#39;m not at the computer, I’m usually studying for my private pilot license, running, reading, hanging out with friends, or playing some video games.
               </p>
 
 
